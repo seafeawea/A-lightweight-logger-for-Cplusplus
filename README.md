@@ -32,13 +32,13 @@ Use the function: Logger::flush()
 		    Logger::WriteLoggerWithTime("Time test!\r\n");
 		    test.join();
 		    return 0;
-	}
+	}  
 #Result:
-	This is a test!
-	Sun Nov 29 21:35:39 2015: Time test!
-	Sun Nov 29 21:35:39 2015: Thread test!
-	Sun Nov 29 21:35:39 2015: Time test!
-	Sun Nov 29 21:35:39 2015: Time test!
-	Sun Nov 29 21:35:39 2015: Time test!
-	Sun Nov 29 21:35:39 2015: Time test!
+	This is a test!  
+	Sun Nov 29 21:35:39 2015: Time test!  
+	Sun Nov 29 21:35:39 2015: Thread test!  
+	Sun Nov 29 21:35:39 2015: Time test!  
+	Sun Nov 29 21:35:39 2015: Time test!  
+	Sun Nov 29 21:35:39 2015: Time test!  
+	Sun Nov 29 21:35:39 2015: Time test!  
 	Sun Nov 29 21:35:39 2015: Time test!
