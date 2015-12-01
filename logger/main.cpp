@@ -7,9 +7,27 @@
 //
 
 #include <iostream>
+#include <string>
+#include <thread>
+#include "logger.h"
+using namespace std;
+
+void foo() {
+    Logger::WriteLoggerWithTime("Thread test!\r\n");
+}
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    std::cout << "Hello, World!\n";
+    //string test()
+    Logger::WriteLogger("This is a test!\r\n");
+    thread test(foo);
+    //test.detach();
+    Logger::WriteLoggerWithTime("Time test!\r\n");
+    Logger::WriteLoggerWithTime("Time test!\r\n");
+    Logger::WriteLoggerWithTime("Time test!\r\n");
+    Logger::WriteLoggerWithTime("Time test!\r\n");
+    Logger::WriteLoggerWithTime("Time test!\r\n");
+    Logger::WriteLoggerWithTime("Time test!\r\n");
+    test.join();
     return 0;
 }
